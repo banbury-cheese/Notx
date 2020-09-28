@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_connect"
+        android:title="Connect"
+        android:icon="@drawable/connect_icon" />
+
+    <item android:id="@+id/nav_notes"
+        android:title="Notes"
+        android:icon="@drawable/notes_icon" />
+
+    <item android:id="@+id/nav_books"
+        android:title="Books"
+        android:icon="@drawable/books_icon" />
+
+    <item android:id="@+id/nav_search"
+        android:title="Search"
+        android:icon="@drawable/search_icon" />
+
+    <item android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings_icon"/>
+
+</menu>

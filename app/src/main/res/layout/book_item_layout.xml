@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="115dp"
+        android:layout_height="175dp"
+        app:cardElevation="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:elevation="10dp"
+        android:id="@+id/card_view_book_item_image"
+        app:cardBackgroundColor="@color/colorAccentLight"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sample_book"
+            android:id="@+id/book_item_image"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:id="@+id/linear_book_info"
+        android:layout_toRightOf="@+id/card_view_book_item_image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="English Literature Class 11"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:id="@+id/book_name_book_item"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Price : 500 Rs"
+            android:textSize="16sp"
+            android:textColor="#5B595C"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:id="@+id/book_price_book_item"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Quality : Good"
+            android:textSize="16sp"
+            android:textColor="#5B595C"
+            android:maxLines="1"
+            android:id="@+id/book_quality_book_item"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Desciption about the book. Things like publisher, actual book name will come here."
+            android:textSize="12sp"
+            android:textColor="@color/colorBlackLight"
+            android:maxLines="2"
+            android:id="@+id/book_description_book_item"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/view_profile_book_item"
+                android:background="@drawable/rounded_green_gradient_button"
+                android:text="Contact Seller"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context=".Fragments.NotesFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout_notes"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/notes_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Notes"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_below="@id/app_bar_layout_notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="120dp"
+        android:paddingEnd="120dp"
+        android:elevation="10dp"
+        android:id="@+id/viewPagerNotes"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/add_notes_icon"
+        android:tint="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorAccentLight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:rippleColor="@color/colorAccentLight"
+        android:background="@drawable/rounded_green_outline_background"
+        android:layout_margin="16dp" />
+    
+</RelativeLayout>

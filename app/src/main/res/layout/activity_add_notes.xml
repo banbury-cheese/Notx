@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddNotes">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout_add_notes"
+        android:background="@android:color/white"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/add_notes_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@android:color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close_add_notes_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/cancel_icon"
+                    app:tint="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/save_new_notes_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    app:tint="@color/colorPrimaryDark"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/tick_icon"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/app_bar_layout_add_notes"
+        >
+
+        <EditText
+            android:id="@+id/chapter_name_add_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/colorBlackLight"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorPrimary"
+            android:hint="Chapter's Name" />
+
+        <EditText
+            android:id="@+id/class_add_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/colorBlackLight"
+            android:textSize="16sp"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Class (Eg.- 10)" />
+
+        <EditText
+            android:id="@+id/subject_name_add_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/colorBlackLight"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorPrimary"
+            android:hint="Chapters Name (Physics, Chemistry, Maths, Biology, History, Hindi, Geography, Computer, Literature, Language, P.Ed., Others)\nNote - Please only enter one of the above subject names" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/upload_button"
+            android:background="@drawable/rounded_green_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Upload PDF"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:elevation="100dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

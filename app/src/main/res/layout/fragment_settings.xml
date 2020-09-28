@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Fragments.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/settings_linear_layout"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="54dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Jhon Doe"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:id="@+id/full_name_profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constantly travelling and keeping up to date with business related books."
+                android:maxLines="3"
+                android:layout_marginTop="10dp"
+                android:textColor="#909090"
+                android:textSize="12sp"
+                android:id="@+id/bio_profile_frag" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#909090"
+                    android:textSize="12sp"
+                    android:text="Class -"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#909090"
+                    android:textSize="12sp"
+                    android:id="@+id/class_profile"
+                    android:layout_marginLeft="5dp"
+                    android:text=" 12-J"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/contact_icon"
+                    android:id="@+id/call_icon_profile"
+                    android:layout_marginTop="3dp"
+                    app:tint="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/email_filled_icon"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/email_icon_profile"
+                    app:tint="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/whatsapp_icon_profile"
+                    android:src="@drawable/whatsapp_icon"
+                    app:tint="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginLeft="7.5dp"
+                android:layout_height="100dp"
+                android:elevation="10dp"
+                android:src="@drawable/profile"
+                android:id="@+id/profile_image_profile" />
+
+            <Button
+                android:layout_width="115dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="32dp"
+                android:id="@+id/edit_profile"
+                android:background="@drawable/rounded_green_gradient_button"
+                android:text="Edit Profile"
+                android:textSize="10sp"
+                android:elevation="10dp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/save_you_post_linear_layout"
+        android:background="@drawable/rounded_green_outline_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/settings_linear_layout"
+        android:layout_marginRight="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/images_grid_view_btn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grid_icon"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/images_save_btn"
+            android:layout_width="1dp"
+            android:layout_height="49dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save_icon_filled"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_upload_pic"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/save_you_post_linear_layout"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_saved_pic"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/save_you_post_linear_layout"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

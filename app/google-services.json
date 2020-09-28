@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1020903645942",
+    "firebase_url": "https://notx-3a6e4.firebaseio.com",
+    "project_id": "notx-3a6e4",
+    "storage_bucket": "notx-3a6e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020903645942:android:d39685947e492c1d4742d7",
+        "android_client_info": {
+          "package_name": "com.example.notx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020903645942-h82ju251if67lqa3o41g5jfbbnnqc8vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNIUTkd0_XYhtbM3Gk4yGRng-c1suxZRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020903645942-h82ju251if67lqa3o41g5jfbbnnqc8vn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

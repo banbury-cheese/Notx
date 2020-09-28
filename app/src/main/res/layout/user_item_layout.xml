@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/colorWhite"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:background="@drawable/rounded_green_outline_background"
+    android:layout_marginTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_green_outline_background"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Jhon Doe"
+                    android:maxLines="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:id="@+id/full_name_profile_search"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Constantly travelling and keeping up to date with business related books."
+                    android:maxLines="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#909090"
+                    android:textSize="12sp"
+                    android:id="@+id/bio_profile_search" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#909090"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="12sp"
+                        android:text="Class -"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="#909090"
+                        android:textSize="12sp"
+                        android:id="@+id/class_profile_search"
+                        android:layout_marginLeft="5dp"
+                        android:text=" 12-J"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/contact_icon"
+                        android:id="@+id/call_icon_profile_search"
+                        android:layout_marginTop="3dp"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/email_filled_icon"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/email_icon_profile_search"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/whatsapp_icon_profile_search"
+                        android:src="@drawable/whatsapp_icon"
+                        app:tint="@color/colorPrimaryDark" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="85dp"
+                    android:layout_marginRight="7.5dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:layout_height="85dp"
+                    android:elevation="10dp"
+                    android:src="@drawable/profile"
+                    android:id="@+id/profile_image_profile_search" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="32dp"
+                    android:id="@+id/view_profile_profile_search"
+                    android:background="@drawable/rounded_green_gradient_button"
+                    android:text="View Profile"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="13sp"
+                    android:elevation="10dp"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
